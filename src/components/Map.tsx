@@ -41,6 +41,7 @@ const Map: React.FC<MapProps> = ({ latitude, longitude }) => {
     <div 
       className="relative h-full w-full rounded-lg overflow-hidden bg-blue-50 border hover:shadow-lg transition-shadow duration-300 cursor-pointer"
       onClick={handleMapClick}
+      aria-label={`Map showing location at ${latitude.toFixed(6)}, ${longitude.toFixed(6)}`}
     >
       <div ref={mapRef} className="w-full h-full">
         {/* Placeholder for the map */}
