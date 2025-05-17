@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Navigation } from 'lucide-react';
+import { Navigation, MapPin, Send } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -12,12 +12,21 @@ const Navbar = () => {
           <Navigation className="h-6 w-6 text-primary" />
           <span className="font-bold text-xl">LocationShare</span>
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <Link to="/">
-            <Button variant="ghost">Home</Button>
+            <Button variant="ghost" size="sm">Home</Button>
+          </Link>
+          <Link to="/request">
+            <Button variant="outline" size="sm">
+              <Send className="mr-1 h-4 w-4" />
+              Request Location
+            </Button>
           </Link>
           <Link to="/view">
-            <Button variant="outline">View Shared Location</Button>
+            <Button variant="outline" size="sm">
+              <MapPin className="mr-1 h-4 w-4" />
+              View Shared
+            </Button>
           </Link>
         </div>
       </div>
