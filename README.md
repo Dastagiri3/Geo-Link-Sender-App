@@ -1,62 +1,114 @@
-# Welcome to your Lovable project
+🌍 Geo Link Sender App
 
-## Project info
+A simple and powerful web application that allows users to generate and share a geo-location tracking link. When the recipient opens the link and grants permission, their location details are captured and displayed.
 
-**URL**: https://geo-link-sender-app.vercel.app/
+🔗 Live Demo: https://geo-link-sender-app.vercel.app/
 
-## How can I edit this code?
+📦 GitHub Repo: https://github.com/Dastagiri3/Geo-Link-Sender-App.git
 
-There are several ways of editing your application.
+🚀 Features
+📍 Generate unique geo-tracking links
+🔗 Share links via WhatsApp, SMS, or any platform
+📡 Capture user location (with permission)
+🗺️ Display latitude and longitude
+⚡ Lightweight and fast web app
+🌐 Works on mobile and desktop browsers
+🛠️ Tech Stack
 
-**Use Lovable**
+Frontend:
 
-Simply visit the [Vercel Project](https://geo-link-sender-app.vercel.app/) and start prompting.
+HTML5
+CSS3
+JavaScript
 
-Changes made via Lovable will be committed automatically to this repo.
+APIs & Browser Features:
 
-**Use your preferred IDE**
+Geolocation API
+URL parameters handling
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Deployment:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Vercel
+📂 Project Structure
+Geo-Link-Sender-App/
+│── index.html        # Main UI
+│── style.css         # Styling
+│── script.js         # Core logic
+│── receiver.html     # Handles location capture
+│── README.md         # Documentation
+⚙️ How It Works
+User opens the app
+Clicks Generate Link
+App creates a unique tracking URL
+User shares the link with someone
+When the receiver opens the link:
+Browser asks for location permission
+If allowed → location is captured
+Coordinates are displayed or stored
 
-Follow these steps:
+👉 This works using the browser’s Geolocation API, which requires user consent before sharing location data
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧑‍💻 Installation & Setup
+1. Clone the Repository
+git clone https://github.com/Dastagiri3/Geo-Link-Sender-App.git
+cd Geo-Link-Sender-App
+2. Run Locally
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Simply open index.html in your browser
 
-# Step 3: Install the necessary dependencies.
-npm i
+OR use Live Server (recommended):
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+# VS Code Live Server extension
+Right click → Open with Live Server
+🌐 Deployment
 
-**Edit a file directly in GitHub**
+You can deploy easily using:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Vercel (recommended)
+Netlify
+GitHub Pages
+Deploy on Vercel:
+npm install -g vercel
+vercel
+🔐 Privacy & Security
+Location is only shared after user permission
+No background tracking
+No data stored without consent
+Works purely on client-side (no backend required)
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🚧 Future Improvements
+📊 Store location history
+🔐 Authentication system
+📍 Map integration (Google Maps / Leaflet)
+📡 Real-time tracking
+☁️ Backend database (Firebase / MongoDB)
+🤝 Contributing
 
-## What technologies are used for this project?
+Contributions are welcome!
 
-This project is built with:
+Fork the repo
+Create a new branch
+Make changes
+Submit a Pull Request
+📄 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is licensed under the MIT License.
 
+👨‍💻 Author
+
+Dastagiri Jillela
+
+GitHub: https://github.com/Dastagiri3
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+💡 Tip (for your resume)
+
+This is a great beginner-to-intermediate project demonstrating:
+
+Real-world API usage
+Frontend logic
+User permission handling
+Deployment skills
